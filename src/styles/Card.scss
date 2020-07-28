@@ -1,0 +1,21 @@
+.Card .input {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.Card .input:focus {
+  background: white;
+  border: 1px solid #ced4da;
+  cursor: text;
+  color: #495057;
+}
+.Card .input::placeholder {
+  color: white;
+}
+.Button {
+  text-align: left;
+}
+.task-li {
+  cursor: pointer;
+}
