@@ -3,11 +3,12 @@ import React from 'react';
 import '../styles/Card.scss';
 import Tasks from './Tasks';
 
-function Card() {
+function Card(props) {
+  const {title} = props.dataTask;
   return (
     <div className="Card card mr-2 bg-dark">
       <div className="card-header">
-        <input className="form-control text-capitalize input" type="search" placeholder="To Do" aria-label="Title" />
+        <input className="form-control text-capitalize input" type="search" placeholder={title} aria-label="Title" />
       </div>
       <div className="card-body">
         <Tasks />
