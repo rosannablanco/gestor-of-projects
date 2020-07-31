@@ -7,7 +7,7 @@ function ListCard(props) {
   });
   console.log();
   return (
-    <section className="d-flex p-3">
+    <section className="d-flex p-3 List-card">
       {TaskElement}
       <button type="button" className="btn btn-info align-self-start">
         <span className="fa fa-plus"></span>

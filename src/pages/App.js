@@ -10,8 +10,13 @@ function App() {
   const [dataBoard, setDataBoard] = useState([]);
 
   useEffect(() => {
+    const GetLS = JSON.parse(localStorage.getItem('dataBoard'));
     const ListTasks = board.board.list;
-    setDataBoard(ListTasks);
+    if (GetLS === null) {
+      setDataBoard(ListTasks);
+    } else {
+      setDataBoard(GetLS);
+    }
   }, []);
 
   return (

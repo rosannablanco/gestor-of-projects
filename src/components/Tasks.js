@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Tasks() {
+function Tasks(props) {
+  const {title, id} = props.task;
+
   return (
-    <ul className="task list-group">
-      <li className="task-li list-group-item mb-2">
-        <h3 className="h6">Components</h3>
-      </li>
-    </ul>
+    <li className="task-li list-group-item mb-2" id={id}>
+      <h3 className="h6">{title}</h3>
+    </li>
   );
 }
 
